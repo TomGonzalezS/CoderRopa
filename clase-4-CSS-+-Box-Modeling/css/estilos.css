@@ -1,0 +1,77 @@
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: x-large;
+}
+.margen_borde {
+    /* border: 10px solid salmon; */
+border-bottom: 10px solid black;
+border-top: 10px solid yellowgreen;
+border-right: 10px solid goldenrod;
+border-left: 10px solid wheat;
+background-color: blueviolet;
+width: 200px;
+height: 200px;
+}
+
+p {
+    padding: 10px;
+    /* padding-top: ;
+    padding-bottom: ;
+    padding-right: ;
+    padding-left: ; */
+    margin: 10px 10px;
+}
+
+li {
+    display: inline;
+    margin: 15px;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+}
+
+.relative {
+    background-color: red;
+position: relative;
+left: 50px;
+top: 50px;
+z-index: 2;
+}
+.absolute {
+    background-color: blue;
+    position: absolute;
+    left: 70px;
+}
+.sticky {
+    /* background-color: yellow; */
+    position: fixed;
+}
+.fixed {
+    /* background-color: green; */
+    position: sticky;
+    bottom: 850px;
+    left: 1100px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: white;
+    width: 100vw;
+}
+
+header {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    width: 100vh;
+}

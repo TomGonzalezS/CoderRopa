@@ -1,0 +1,47 @@
+/* MOBILE FIRST */
+#grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
+}
+
+header {
+    background-color: rgb(211, 211, 101);
+grid-area: header;
+}
+main {
+    background-color: rgb(134, 32, 32);
+    grid-area: main;
+    height: 20vh;
+}
+footer {
+    background-color: rgb(18, 70, 18);
+    grid-area: footer;
+    height: 20vh;
+}
+/* TABLET */
+@media screen and (min-width: 768px) {
+    #grid_container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "header header header"
+        "main main footer"
+        "main main footer" ; 
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
+    #grid_container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "header header header"
+        "main footer footer"
+        "main footer footer" ; 
+    }
+}
